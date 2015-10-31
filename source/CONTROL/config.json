@@ -1,0 +1,24 @@
+{
+  "general": {
+    "package": "rtorrent",
+    "name": "rTorrent",
+    "version": "VERSION",
+    "depends": [],
+    "conflicts": [],
+    "maintainer": "mafredri",
+    "email": "mafredri+adm@gmail.com",
+    "developer": "Jari Sundell",
+    "website": "https://github.com/rakshasa/rtorrent",
+    "architecture": "ARCH",
+    "firmware": "2.4.0"
+  },
+  "register": {
+    "boot-priority": {
+      "stop-order": 80,
+      "start-order": 20
+    },
+    "symbolic-link": {
+      "/bin": ["rtorrent-attach"]
+    }
+  }
+}

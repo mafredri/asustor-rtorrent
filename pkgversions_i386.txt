@@ -1,0 +1,7 @@
+app-misc/dtach-0.8-r1
+dev-libs/libxml2-2.9.2-r1
+dev-libs/xmlrpc-c-1.32.05-r1
+net-libs/libtorrent-0.13.6
+net-misc/curl-7.45.0
+net-p2p/rtorrent-0.9.6
+sys-libs/ncurses-6.0-r1

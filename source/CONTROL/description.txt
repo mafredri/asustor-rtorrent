@@ -1,0 +1,9 @@
+rTorrent is a text-based ncurses BitTorrent client written in C++, based on the libTorrent libraries for Unix, whose author's goal is "a focus on high performance and good code".
+
+rTorrent is for advanced users, to use rTorrent log in to your NAS through SSH and execute: `rtorrent-attach`
+
+You can then interact with rtorrent, to detach the process you can use the `Ctrl+T` key-combination.
+
+The configuration files are located in `/usr/local/AppCentral/rtorrent/config`. To restart rtorrent you execute `/usr/local/AppCentral/rtorrent/CONTROL/start-stop.sh restart`.
+
+A sample `rtorrent.rc` is provided in the config directory with a few pre-made choices (feel free to change them).

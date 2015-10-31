@@ -1,0 +1,13 @@
+#!/bin/sh
+
+PACKAGE=rtorrent
+PKG_DIR=/usr/local/AppCentral/${PACKAGE}
+
+# shellcheck source=/Users/mafredri/Projects/rtorrent-apkg/source/CONTROL/env.sh
+. ${PKG_DIR}/CONTROL/env.sh
+
+# Enter keyboard transmit mode (to allow arrow keys to work properly)
+tput smkx
+dtach -a $SOCKET -e "^T"
+# Leave keyboard transmit mode
+tput rmkx
