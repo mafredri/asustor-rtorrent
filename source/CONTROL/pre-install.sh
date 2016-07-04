@@ -6,7 +6,6 @@ else
 	PKG_DIR=$APKG_PKG_DIR
 fi
 
-# shellcheck source=/Users/mafredri/Projects/rtorrent-apkg/source/CONTROL/env.sh
 . ${PKG_DIR}/CONTROL/env.sh
 
 case "${APKG_PKG_STATUS}" in

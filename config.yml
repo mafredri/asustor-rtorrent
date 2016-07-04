@@ -1,0 +1,48 @@
+---
+ssh: ascross
+
+package: rtorrent
+name: rTorrent
+version: 0.9.6-r1
+firmware: 2.6.0
+
+config:
+  general:
+    developer: Jari Sundell
+    website: https://github.com/rakshasa/rtorrent
+    maintainer: mafredri
+    email: mafredri+adm@gmail.com
+    depends: []
+    conflicts: []
+    package: "PACKAGE"
+    name: "NAME"
+    version: "VERSION"
+    architecture: "ARCHITECTURE"
+    firmware: "FIRMWARE"
+  register:
+    symbolic-link:
+      /bin:
+        - rtorrent-attach
+      /usr/bin:
+        - rtorrent
+    boot-priority:
+      start-order: 20
+      stop-order: 80
+    port:
+      - 5000
+
+case_sensitive: false
+runpath: /usr/local/AppCentral/rtorrent/lib:/usr/local/AppCentral/rtorrent/usr/lib
+updated_libstdcpp: false
+root: /
+files:
+  - /usr/bin/dtach
+  - /usr/bin/tput
+  - /usr/bin/rtorrent
+  - /usr/lib/libtorrent.so*
+  - /usr/lib/libxmlrpc_server.so*
+  - /usr/lib/libxmlrpc.so*
+  - /usr/lib/libxmlrpc_util.so*
+  - /usr/lib/libcurl.so*
+  - /usr/lib/libxml2.so*
+  - /lib/libncursesw.so*

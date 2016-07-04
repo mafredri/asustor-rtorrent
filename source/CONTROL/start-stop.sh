@@ -9,7 +9,6 @@ else
 	PKG_DIR=$APKG_PKG_DIR
 fi
 
-# shellcheck source=/Users/mafredri/Projects/rtorrent-apkg/source/CONTROL/env.sh
 . ${PKG_DIR}/CONTROL/env.sh
 
 PIDFILE=/var/run/${PACKAGE}.pid

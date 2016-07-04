@@ -1,5 +1,5 @@
-rtorrent-apkg
-=============
+asustor-rtorrent
+================
 
 ![](source/CONTROL/icon.png)
 
