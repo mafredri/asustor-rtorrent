@@ -83,3 +83,6 @@ peer_exchange = yes
 
 # Preallocate files to reduce fragmentation.
 system.file_allocate.set = yes
+
+# Required for XMLRPC
+scgi_port = localhost:5000
