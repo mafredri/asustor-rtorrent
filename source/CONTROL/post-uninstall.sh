@@ -6,4 +6,3 @@ else
 	PKG_DIR=$APKG_PKG_DIR
 fi
 
-. ${PKG_DIR}/CONTROL/env.sh
