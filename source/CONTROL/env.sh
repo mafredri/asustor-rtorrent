@@ -7,7 +7,7 @@ export USER=admin
 export GROUP=administrators
 export CONFIG=${PKG_DIR}/config
 export TMPDIR=${PKG_DIR}/tmp
-export SOCKET=${TMPDIR}/rtorrent.dtach
+export SOCKET=${TMPDIR}/rtorrent.tmux
 
 export PATH=${PKG_DIR}/bin:$PATH
 export PATH=${PKG_DIR}/usr/bin:$PATH

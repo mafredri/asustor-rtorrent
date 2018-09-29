@@ -3,7 +3,7 @@ ssh: ascross
 
 package: rtorrent
 name: rTorrent
-version: 0.9.6-r1
+version: 0.9.6-r2
 firmware: 2.6.0
 
 config:
@@ -12,7 +12,8 @@ config:
     website: https://github.com/rakshasa/rtorrent
     maintainer: mafredri
     email: mafredri+adm@gmail.com
-    depends: []
+    depends:
+      - tmux
     conflicts: []
     package: "PACKAGE"
     name: "NAME"
@@ -22,9 +23,7 @@ config:
   register:
     symbolic-link:
       /bin:
-        - rtorrent-attach
-      /usr/bin:
-        - rtorrent
+        - "*"
     boot-priority:
       start-order: 20
       stop-order: 80
@@ -36,7 +35,6 @@ runpath: /usr/local/AppCentral/rtorrent/lib:/usr/local/AppCentral/rtorrent/usr/l
 updated_libstdcpp: false
 root: /
 files:
-  - /usr/bin/dtach
   - /usr/bin/tput
   - /usr/bin/rtorrent
   - /usr/lib/libtorrent.so*

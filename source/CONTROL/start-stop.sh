@@ -20,12 +20,11 @@ start_daemon() {
 	# Set umask to create files with world r/w
 	umask 0
 
-	env TERM="linux" \
-		start-stop-daemon -S \
-			--pidfile $PIDFILE \
-			--chuid $CHUID \
-			--user $USER \
-			--exec dtach -- -n $SOCKET -e "^T" env HOME=$CONFIG rtorrent
+	start-stop-daemon -S \
+		--pidfile $PIDFILE \
+		--chuid $CHUID \
+		--user $USER \
+		--exec tmux -- -S $SOCKET new-session -d env HOME=$CONFIG rtorrent
 
 	# Get the pid of the newest process matching rtorrent
 	pgrep -n rtorrent >$PIDFILE

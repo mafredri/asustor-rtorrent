@@ -7,6 +7,6 @@ PKG_DIR=/usr/local/AppCentral/${PACKAGE}
 
 # Enter keyboard transmit mode (to allow arrow keys to work properly)
 tput smkx
-dtach -a $SOCKET -e "^T"
+env TERM=screen tmux -S $SOCKET attach
 # Leave keyboard transmit mode
 tput rmkx
